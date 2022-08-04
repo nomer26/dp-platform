@@ -7,13 +7,13 @@ alertmanager:
     annotations:
       kubernetes.io/ingress.class: alb
       alb.ingress.kubernetes.io/scheme: internet-facing
-      alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-northeast-2:596152156334:certificate/0bf1a94d-bdb8-4f34-afa7-f9820581a4ba
+      alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-northeast-2:756008830886:certificate/4dc68786-df1f-40d1-a817-44645dd6c696
       alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
       alb.ingress.kubernetes.io/ssl-redirect: '443'
       alb.ingress.kubernetes.io/group.name: "devx"
-      external-dns.alpha.kubernetes.io/hostname: pm-alert.devxmonitor.click
+      external-dns.alpha.kubernetes.io/hostname: pm-alert.devx88.click
     hosts:
-      - "pm-alert.devxmonitor.click"
+      - "pm-alert.devx88.click"
     path: /
     pathType: Prefix
 
@@ -39,12 +39,12 @@ server:
     annotations:
       kubernetes.io/ingress.class: alb
       alb.ingress.kubernetes.io/scheme: internet-facing
-      alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-northeast-2:596152156334:certificate/0bf1a94d-bdb8-4f34-afa7-f9820581a4ba
+      alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-northeast-2:756008830886:certificate/4dc68786-df1f-40d1-a817-44645dd6c696
       alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
       alb.ingress.kubernetes.io/ssl-redirect: '443'
       alb.ingress.kubernetes.io/group.name: "devx"
-      external-dns.alpha.kubernetes.io/hostname: pm-server.devxmonitor.click
+      external-dns.alpha.kubernetes.io/hostname: pm-server.devx88.click
     hosts:
-      - "pm-server.devxmonitor.click"
+      - "pm-server.devx88.click"
     path: /
     pathType: Prefix

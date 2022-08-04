@@ -5,13 +5,6 @@ terraform {
       version = "~> 3.21"
     }
   }
-  backend "s3" {
-    bucket = "playdata.devx.terraform.state"
-    key = "devx/terraform.tfstate"
-    region = "ap-northeast-2"
-    encrypt = true
-    dynamodb_table = "tfstateLock"
-  }
 }
 
 provider "aws" {
