@@ -12,7 +12,7 @@ pipeline {
     stages{
         stage('Git Checkout'){
             steps{
-                git branch: 'main', credentialsId: 'git', url: 'https://github.com/playdatadevx/dp-platform'
+                git branch: 'main', credentialsId: 'git', url: 'https://github.com/nomer26/dp-platform'
                 // withCredentials([sshUserPrivateKey(credentialsId: 'gpg', keyFileVariable: 'gpg_secret', passphraseVariable: 'gpg_passphrase', usernameVariable: 'gpg'), file(credentialsId: 'gpg-trust', variable: 'gpg_trust')]) {
                 //    sh 'gpg --batch --import $gpg_secret'
                 //    sh 'gpg --import-ownertrust $gpg_trust'
